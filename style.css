@@ -24,6 +24,8 @@ text-align: center;
 }
 .clock div{
     margin: 5px;
+    /*to keep the ampm in a same level with other box. */
+    position: relative;
 
 }
 
@@ -46,4 +48,15 @@ text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     background: brown;
+}
+/*here if we do not make the position of clock class div to relative then the ampm will go to bottom more than others*/
+.clock #ampm{
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 30px;
+    font-size: 25px;
+    color: whitesmoke;
+    background-color: brown ;
+
 }
